@@ -20,3 +20,29 @@
 | Django 4              |            |                 |
 | Django REST Framework |            |                 |
 | SQLite3               |            |                 |
+
+### 起動手順
+
+1. リポジトリのクローン
+
+
+2. Docker Desktop のインストール
+
+https://www.docker.com/ja-jp/products/docker-desktop/
+
+3. コンテナの構築（ビルド）と起動
+
+   ```bash
+   docker compose up -d --build
+   ```
+
+4. データベースのマイグレーション
+
+   ```bash
+   docker compose exec backend python manage.py migrate
+   ```
+
+5. アプリケーションへのアクセス
+
+- フロントエンド: http://localhost:5173
+- バックエンド: http://localhost:8000
