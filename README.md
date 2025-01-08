@@ -25,34 +25,24 @@
 
 1. リポジトリのクローン
 
-2. .env.exampleファイルを複製して名前を変更
-<code>frontend/src/.env.example</code>→<code>.env</code>
 
-3. Docker Desktop のインストール
+2. Docker Desktop のインストール
 
 https://www.docker.com/ja-jp/products/docker-desktop/
 
-4. Docker Desktopを起動
-
-5. コンテナの構築（ビルド）と起動
+3. コンテナの構築（ビルド）と起動
 
    ```bash
    docker compose up -d --build
    ```
 
-6. データベースのマイグレーション
+4. データベースのマイグレーション
 
    ```bash
    docker compose exec backend python manage.py migrate
    ```
 
-7. アプリケーションへのアクセス
+5. アプリケーションへのアクセス
 
 - フロントエンド: http://localhost:5173
 - バックエンド: http://localhost:8000
-
-
-## ログインユーザー情報
-データベースのマイグレーション実行時に作成
-- Username: testuser
-- Password: testpass123
