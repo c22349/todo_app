@@ -26,7 +26,7 @@
 1. リポジトリのクローン
 
 2. .env.exampleファイルを複製して名前を変更
-frontend/src/.env.example → .env
+<code>frontend/src/.env.example</code>→<code>.env</code>
 
 3. Docker Desktop のインストール
 
