@@ -32,7 +32,7 @@
 
 https://www.docker.com/ja-jp/products/docker-desktop/
 
-4. Docker Desktopを起動
+4. Docker Desktopを開く
 
 5. コンテナの構築（ビルド）と起動
 
